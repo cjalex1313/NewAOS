@@ -1,0 +1,6 @@
+@AOS.Api_HostAddress = http://localhost:5101
+
+GET {{AOS.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
