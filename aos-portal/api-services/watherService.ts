@@ -21,7 +21,7 @@ export const getWeather = async () => {
     throw new Error(error.value.message);
   }
   if (!data.value) {
-    throw new Error("Invalid response");
+    throw error;
   }
   return data.value
 }

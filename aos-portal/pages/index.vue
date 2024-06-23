@@ -8,9 +8,6 @@
       <button @click="tryGetWeather">Get Weather</button>
       <button @click="tryGetWeatherSecure">Get Secure Weather</button>
     </div>
-    <div v-if="data">
-      {{ data.length }}
-    </div>
   </div>
 </template>
 
