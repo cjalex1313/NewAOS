@@ -41,6 +41,10 @@ import { useVuelidate } from "@vuelidate/core";
 import { reactive } from "vue";
 import { login } from "~/api-services/authService";
 
+definePageMeta({
+  layout: "unauthenticated",
+});
+
 const router = useRouter();
 const userStore = useUserStore();
 

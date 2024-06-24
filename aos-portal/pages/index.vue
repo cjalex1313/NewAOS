@@ -1,18 +1,15 @@
 <template>
   <div>
-    <div>Dashboard</div>
-    <div>
-      <nuxt-link to="/auth/login">Login</nuxt-link>
-    </div>
-    <div>
-      <button @click="tryGetWeather">Get Weather</button>
-      <button @click="tryGetWeatherSecure">Get Secure Weather</button>
-    </div>
+    <h1 class="text-2xl">Domains</h1>
   </div>
 </template>
 
 <script setup lang="ts">
 import { getWeather, getSecureAuthWeather } from "~/api-services/watherService";
+
+definePageMeta({
+  name: "Domains and Goals",
+});
 
 const tryGetWeather = async () => {
   const data = await getWeather();
